@@ -24,8 +24,8 @@ An Express.js API for efficiently reading, filtering, sorting, and searching dat
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd json-data-api
+git clone https://github.com/klpod221/json-query
+cd json-query
 ```
 
 2. Install dependencies:
@@ -76,14 +76,17 @@ Place your JSON files in the `./data/` directory. The API will automatically det
 ### API Endpoints
 
 - **List all JSON files**:
+
   ```
   GET /api/files
   ```
 
 - **Query data from a JSON file**:
+
   ```
   GET /api/file/:fileName
   ```
+
   Query parameters:
   - `page`: Page number (default: 1)
   - `limit`: Items per page (default: 100)
@@ -94,11 +97,13 @@ Place your JSON files in the `./data/` directory. The API will automatically det
   - `filter.fieldName`: Filter by field value (supports nested fields via dot notation)
 
 - **Get JSON file structure**:
+
   ```
   GET /api/file/:fileName/structure
   ```
 
 - **Clear cache**:
+
   ```
   POST /api/cache/clear
   POST /api/cache/clear/:fileName
