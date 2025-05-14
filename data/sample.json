@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "age": 30,
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "country": "USA"
+    },
+    "tags": ["customer", "premium"],
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "age": 25,
+    "address": {
+      "street": "456 Oak Ave",
+      "city": "San Francisco",
+      "country": "USA"
+    },
+    "tags": ["customer"],
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "Mike Johnson",
+    "email": "mike@example.com",
+    "age": 35,
+    "address": {
+      "street": "789 Pine St",
+      "city": "Boston",
+      "country": "USA"
+    },
+    "tags": ["supplier"],
+    "status": "inactive"
+  }
+]

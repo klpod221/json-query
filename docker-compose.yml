@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: json-processor-api
+    restart: unless-stopped
+    ports:
+      - "3723:3000"
+    volumes:
+      - ./data:/usr/src/app/data
+      # Mount the data directory as a volume to easily add/modify JSON files
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - CACHE_TTL=3600
+      - MAX_CACHE_SIZE=1000
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
