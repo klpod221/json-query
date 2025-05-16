@@ -11,7 +11,7 @@ RUN mkdir -p ./data
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm install --production
 
 # Copy the rest of the application
 COPY . .
